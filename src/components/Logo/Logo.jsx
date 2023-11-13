@@ -4,7 +4,7 @@ import LogoImage from "../../assects/Group 1.png";
 function Logo() {
     return (
         
-        <img src= {LogoImage} alt="Logo" width={70} />
+        <img src= {LogoImage} alt="Logo" width={67} />
         
     )
 }

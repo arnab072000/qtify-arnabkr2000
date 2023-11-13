@@ -17,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React AkM
+          Learn React AkM 2000
         </a> */}
         <Navbar />
       </header>
