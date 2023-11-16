@@ -2,6 +2,7 @@
 import React from 'react';
 //import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import HeroSection from "./components/HeroSection/Hero";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           Learn React AkM 2000
         </a> */}
         <Navbar />
+        <HeroSection />
       </header>
     </div>
     // <>
