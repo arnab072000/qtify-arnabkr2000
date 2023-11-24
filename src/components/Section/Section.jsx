@@ -23,6 +23,7 @@ function Section ({title, data})  {
                 imgSrc={cardData.image}
                 label={cardData.title}
                 followersCount={cardData.follows}
+                songs={cardData.songs.length}
                 />)}
             </div>}
         </div>)

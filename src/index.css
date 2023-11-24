@@ -29,6 +29,7 @@ code {
 
 html,body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -58,9 +59,9 @@ p,h1,h2,h3,h4,h5,h6 {
   isolation: isolate;
 }
 
-.swiper-slide {
+/* .swiper-slide {
   width: auto !important;
-}
+} */
 a,
 a:hover,
 a:focus,

@@ -32,6 +32,7 @@ function Carousal ({data}) {
             imgSrc={cardData.image}
             label={cardData.title}
             followersCount={cardData.follows}
+            songs={cardData.songs.length}
             /></SwiperSlide>)}
     </Swiper>
 

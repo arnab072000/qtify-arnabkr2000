@@ -1,16 +1,20 @@
 
 import React from 'react';
+import { Tooltip } from '@mui/material';
 import './Card.css';
 
 function Card ({
    imgSrc,
    followersCount,
-   label
+   label,
+   songs
 })  {
-    return (<div className='card-wrapper'>
+    return (
+      <Tooltip title={songs} placement="top" arrow>
+      <div className='card-wrapper'>
         <div className='card'>
            <div className='card-img-frame'>
-              <img className='card-img' src={imgSrc} />
+              <img className='card-img' src={imgSrc} loading='lazy' />
            </div>
           <div className='card-content'>
             <span className='card-content-pill'>
@@ -19,7 +23,8 @@ function Card ({
           </div>
         </div>
         <p className='card-label'>{label}</p>
-      </div>)
+      </div>
+      </Tooltip>)
 }
 
 export default Card;
