@@ -12,7 +12,7 @@ import "./Carousal.css";
 import LeftIcon from "../../assects/Left Icon.png";
 import Righticon from "../../assects/Right Icon.png";
 
-function Carousal ({data}) {
+function Carousal ({navID, data}) {
     return (<div className='carousel-container'>
       <Swiper
     modules={[Virtual, Navigation, Pagination]}
@@ -24,7 +24,7 @@ function Carousal ({data}) {
     //     type: 'fraction',
     // }}
     // navigation={true}
-    navigation={{nextEl:".arrow-left", prevEl:".arrow-right" }}
+    navigation={{nextEl:`.arrow-left-${navID}`, prevEl:`.arrow-right-${navID}` }}
     virtual
     >
       {data.map(cardData => <SwiperSlide key={cardData.id}> <Card 
@@ -32,12 +32,12 @@ function Carousal ({data}) {
             imgSrc={cardData.image}
             label={cardData.title}
             followersCount={cardData.follows}
-            songs={cardData.songs.length}
+            songs={cardData.songs ? cardData.songs.length:null}
             /></SwiperSlide>)}
     </Swiper>
 
-    <div className='arrow-left arrow'><img src= {LeftIcon} alt="" /></div>
-    <div className='arrow-right arrow'><img src= {Righticon} alt="" /></div>
+    <div className={`arrow-left-${navID} arrow-left arrow`}><img src= {LeftIcon} alt="" /></div>
+    <div className={`arrow-right-${navID} arrow-right arrow`}><img src= {Righticon} alt="" /></div>
  </div>)
 }
 

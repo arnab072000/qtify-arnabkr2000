@@ -23,6 +23,7 @@ code {
 *::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
@@ -39,7 +40,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
   background-color: var(--color-black);
+  color: var(--color-white);
+  overflow-x: hidden;
 }
 
 img,picture,video,canvas,svg {
@@ -59,9 +63,9 @@ p,h1,h2,h3,h4,h5,h6 {
   isolation: isolate;
 }
 
-/* .swiper-slide {
+.swiper-slide {
   width: auto !important;
-} */
+}
 a,
 a:hover,
 a:focus,

@@ -10,11 +10,11 @@ function Card ({
    songs
 })  {
     return (
-      <Tooltip title={songs} placement="top" arrow>
+      <Tooltip title={`${songs} songs`} placement="top" arrow>
       <div className='card-wrapper'>
         <div className='card'>
            <div className='card-img-frame'>
-              <img className='card-img' src={imgSrc} loading='lazy' />
+              <img className='card-img' src={imgSrc} alt='cardimg' loading='lazy' />
            </div>
           <div className='card-content'>
             <span className='card-content-pill'>

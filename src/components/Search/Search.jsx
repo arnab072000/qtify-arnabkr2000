@@ -9,9 +9,9 @@ function Search({ placeHolder }) {
     }
     return (
         <form className= "wrapper" onSubmit={onSubmit}>
-            <div>
-              <input className= "search" placeHolder={placeHolder}/>
-            </div>        
+            
+            <input className= "search" placeHolder={placeHolder}/>
+                    
             <button  className= "searchButton" type="submit">
                 <Searchicon />
             </button>
